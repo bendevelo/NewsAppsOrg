@@ -21,5 +21,5 @@ NewsAppsOrg is an application for getting the latest and most up-to-date news wh
 - RecyclerView Load More, Endless Scrolling
 - Espresso Testing
 
+<img src="https://github.com/bendevelo/NewsAppsOrg/assets/141692300/8f4b1e37-3411-498b-bf48-67cde76bd3d0" width="230" height="500" />
 
-![Screen_recording_20230919_153803](https://github.com/bendevelo/NewsAppsOrg/assets/141692300/8f4b1e37-3411-498b-bf48-67cde76bd3d0)
