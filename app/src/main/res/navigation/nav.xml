@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.s.newsapp.CategoryFragment"
+        android:label="News"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_sourceFragment"
+            app:destination="@id/sourceFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_bookmarkFragment"
+            app:destination="@id/bookmarkFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_detailedFragment"
+            app:destination="@id/detailedFragment" />
+        <argument
+            android:name="source"
+            app:argType="com.s.newsapp.data.model.SourceArticle" />
+    </fragment>
+    <fragment
+        android:id="@+id/sourceFragment"
+        android:name="com.s.newsapp.SourceFragment"
+        android:label="Sources"
+        tools:layout="@layout/fragment_source" >
+        <argument
+            android:name="source"
+            app:argType="com.s.newsapp.data.model.CategoryArticle" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="com.s.newsapp.BookmarkFragment"
+        android:label="Bookmark"
+        tools:layout="@layout/fragment_bookmark" />
+    <fragment
+        android:id="@+id/detailedFragment"
+        android:name="com.s.newsapp.DetailedFragment"
+        android:label="Article"
+        tools:layout="@layout/fragment_detailed" >
+        <argument
+            android:name="news"
+            app:argType="com.s.newsapp.data.model.NewsArticle" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.s.newsapp.MainFragment"
+        android:label="News Category"
+        tools:layout="@layout/fragment_main" />
+</navigation>

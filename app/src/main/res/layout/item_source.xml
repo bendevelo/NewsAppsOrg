@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    android:elevation="2dp"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="5"
+        android:text="@string/title"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvlanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category     :"
+        android:textSize="14dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:text=" Business"
+        android:layout_marginLeft="2dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tvlanguage"
+        app:layout_constraintTop_toTopOf="@+id/tvlanguage" />
+
+
+    <TextView
+        android:id="@+id/tvdesk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description :"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvlanguage"
+        app:layout_constraintTop_toBottomOf="@+id/tvlanguage" />
+
+
+    <TextView
+        android:id="@+id/tvdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Busineswjdwjjwdnwdwdws"
+        android:layout_marginLeft="2dp"
+        app:layout_constraintStart_toEndOf="@+id/tvdesk"
+        app:layout_constraintTop_toBottomOf="@+id/tvlanguage" />
+</androidx.constraintlayout.widget.ConstraintLayout>
